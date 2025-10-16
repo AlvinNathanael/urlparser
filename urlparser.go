@@ -4,8 +4,6 @@ import "strings"
 
 // RemoveURLQueries
 //
-// Go native url library has one fault which is encoding special characters when reconstructing the URL after query removal process and parsing return.
-// This function is intended as a one-stop solution for any kind of URL query removal from any kind of URLs, even the weirdest ones.
 // If no queryKeys is inserted, it will automatically assume to remove every instance of URL query.
 func RemoveURLQueries(inputURL string, queryKeys ...string) string {
 	// Find URL query separator index.
